@@ -10,7 +10,7 @@ const result_fmt = new Intl.NumberFormat(userLocale, { maximumSignificantDigits:
 const audio = new Audio("./sounds/mixkit-handgun-click-1660.mp3");
 
 window.onload = function () {
-    document.querySelector(".navbar-brand").textContent = document.title;
+    //document.querySelector(".navbar-brand").textContent = document.title;
     document.querySelector("#reset").onclick = hReset;
     build();
     store.load();
@@ -130,8 +130,10 @@ const store = (function (cb) {
 
 
 function hReset() {
-    new bootstrap.Collapse(
-        document.querySelector(".collapse")
-    ).hide();
-    store.reset();
+    //new bootstrap.Collapse(
+    //    document.querySelector(".collapse")
+    //).hide();
+    if (window.confirm("Confirm to reset the counters?")) {
+        store.reset();
+    }
 }

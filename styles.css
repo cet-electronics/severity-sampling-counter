@@ -2,6 +2,7 @@
 }
 
 .ctr-main {
+    margin-bottom: 100px;
 }
 
 .row-col-headers {
@@ -103,4 +104,13 @@
 
 .header-severity {
     background-color: #f4b083;
+}
+
+.ctr-reset {
+    display: flex;
+    justify-content: center;
+}
+
+#reset {
+    width: 120px;
 }
