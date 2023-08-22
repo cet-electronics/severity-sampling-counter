@@ -1,0 +1,106 @@
+﻿body {
+}
+
+.ctr-main {
+}
+
+.row-col-headers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 1.2rem;
+    min-height: 40px;
+    justify-items: center;
+    align-items: flex-end;
+}
+
+.riga {
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    margin-top: 2px;
+    max-height: 60px;
+    border-style: solid;
+    border-width: 3px;
+}
+
+.riga-header {
+    display: grid;
+    grid-template-columns: 70px 48px;
+}
+
+.riga-content {
+    display: grid;
+    grid-template-columns: 1fr 56px 1fr 56px;
+    flex-grow: 1;
+}
+
+.riga-content-index {
+    font-size: 1.5rem;
+    font-weight: bold;
+    justify-self: center;
+    align-self: center;
+}
+
+.riga-content-value {
+    font-size: 1.5rem;
+    justify-self: center;
+    align-self: center;
+}
+
+.riga-btn {
+    margin: 2px 2px;
+    font-size: 1.5rem;
+}
+
+.cls-img {
+    transform: scale(0.85);
+    z-index: -1;
+}
+
+.cls-perc {
+    font-size: 0.7rem;
+    align-self: center;
+}
+
+.row-counted {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 40px;
+    justify-items: center;
+    align-items: center;
+}
+
+#tot-count {
+    font-size: 1.5rem;
+}
+
+.row-result {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    justify-items: stretch;
+    align-items: center;
+    border: solid 1px silver;
+}
+
+    .row-result > div {
+        display: flex;
+        justify-content: center;
+    }
+
+#incidence, #severity {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.header-incidence {
+    background-color: #b4c6e7;
+}
+
+.ctr-incidence {
+    border-right: solid 1px silver;
+}
+
+.header-severity {
+    background-color: #f4b083;
+}

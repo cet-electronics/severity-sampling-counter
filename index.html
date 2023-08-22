@@ -1,1 +1,72 @@
-<h1>Hello!</h1>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Severity Sampling Counter</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <button id="reset" class="btn btn-danger" aria-current="page">Reset</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5 ctr-main">
+        <div class="col-lg-8 px-0 row-col-headers">
+            <div>Class</div>
+            <div>Count</div>
+        </div>
+        <div id="ctr-righe" class="col-lg-8 px-0">
+        </div>
+        <div class="col-lg-8 px-0 row-counted">
+            <div>Total counted leaves:</div>
+            <div id="tot-count"></div>
+        </div>
+        <div class="col-lg-8 px-0 row-result">
+            <div class="header-incidence">
+                <span>Incidence</span>
+            </div>
+            <div class="header-severity">
+                <span>Severity</span>
+            </div>
+            <div class="ctr-incidence">
+                <span id="incidence"></span>
+            </div>
+            <div class="ctr-severity">
+                <span id="severity"></span>
+            </div>
+        </div>
+    </div>
+
+    <template id="tpl-riga">
+        <div class="riga">
+            <div class="riga-header">
+                <img class="cls-img" src="" />
+                <div class="cls-perc"></div>
+            </div>
+            <div class="riga-content">
+                <div class="riga-content-index"></div>
+                <button type="button" class="btn btn-outline-dark btn-lg riga-btn">-</button>
+                <div class="riga-content-value"></div>
+                <button type="button" class="btn btn-outline-dark btn-lg riga-btn">+</button>
+            </div>
+        </div>
+    </template>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
